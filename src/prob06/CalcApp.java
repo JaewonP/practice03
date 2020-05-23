@@ -34,14 +34,26 @@ public class CalcApp {
 				}
 				case "-" : {
 					/*  코드를 완성 합니다 */
+					Sub sub = new Sub();
+					sub.setValue(lValue, rValue);
+					int result = sub.calculate();
+					System.out.println( ">> " + result );
 					break;
 				}
 				case "*" : {
 					/*  코드를 완성 합니다 */
+					Mul mul = new Mul();
+					mul.setValue(lValue, rValue);
+					int result = mul.calculate();
+					System.out.println( ">> " + result );					
 					break;					
 				}
 				case "/" : {
 					/*  코드를 완성 합니다 */
+					Div div = new Div();
+					div.setValue(lValue, rValue);
+					int result = div.calculate();
+					System.out.println( ">> " + result );
 					break;
 				}
 				default :  {

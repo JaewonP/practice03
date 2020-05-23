@@ -18,11 +18,20 @@ public class GoodsApp {
 			int price = Integer.parseInt(infos[1]);
 			int countStock = Integer.parseInt(infos[2]);
 			
-			System.out.println(name + ":" + price + ":" + coutStock);
+			Goods g = new Goods();
+			
+			g.setName(name);
+			g.setCountStock(countStock);
+			g.setPrice(price);
+			
+			array[i] =g;
+			
 		}
 	
 		// 상품 출력
-
+		for(Goods g : array) {
+		System.out.println(g.getName() + ":" + g.getPrice() + ":" + g.getCountStock());
+		}
 		
 		// 자원정리
 		scanner.close();
