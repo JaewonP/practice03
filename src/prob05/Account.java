@@ -26,7 +26,6 @@ public class Account {
 
 		public String getAccountNo() {
 			// TODO Auto-generated method stub
-			
 			return accountNo;
 		}
 		
